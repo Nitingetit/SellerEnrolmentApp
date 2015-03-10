@@ -1,0 +1,74 @@
+<resources>
+
+    <string name="app_name"><b>SellerEnrolmentApp</b></string>
+    <string name="bussiness_name">Business Name *</string>
+    <string name="contact_name">Contact Name *</string>
+    <string name="mobile_no">Mobile No *</string>
+    <string name="verfiy_text">Verify</string>
+    <string name="shipping_pin_code">Shipping PIN Code *</string>
+    <string name="billing_pin_code">Billing PIN Code *</string>
+    <string name="shipping_city">Shipping City *</string>
+    <string name="billing_city">Billing City *</string>
+    <string name="shipping_state">Shipping State *</string>
+    <string name="billing_state">Billing State *</string>
+    <string name="email_id">Email Id *</string>
+    <string name="shipping_address">Shipping Address *</string>
+    <string name="address">Address</string>
+    <string name="billing_address">Billing Address *</string>
+    <string name="verfication_key">Verification Key *</string>
+    <string name="previous_txt">&lt; Previous</string>
+    <string name="next_txt">Next &gt;</string>
+    <string name="bank_name">Bank Name *</string>
+    <string name="ifsc_code">IFSC Code *</string>
+    <string name="beneficiary_name">Beneficiary Name *</string>
+    <string name="account_no">Account Number *</string>
+    <string name="branch">Branch *</string>
+    <string name="cst_tin_number">CST/TIN *</string>
+    <string name="current_top_up">Current Top up Balance is </string>
+    <string name="top_up">Top-up</string>
+    <string name="location">Location</string>
+    <string name="mark_location">Mark Location</string>
+    <string name="save_txt">Save</string>
+    <string name="resgistration_1">Registration Step : 1/3 </string>
+    <string name="resgistration_2">Registration Step :  2/3 </string>
+    <string name="resgistration_3">Registration Step : 3/3 </string>
+    <string name="seller_detail_1">Seller Detail Part : 1/3 </string>
+    <string name="seller_detail_2">Seller Detail Part :  2/3 </string>
+    <string name="seller_detail_3">Seller Detail Part : 3/3 </string>
+    <string name="service_tax">1.1236 </string>
+    <string name="questionMark">"?"</string>
+    <string name="select_pincode">"Select PINCode"</string>
+    <string name="select">"Select"</string>
+    <string name="ga_trackingId">UA-59358708-1</string>
+
+    <!-- Ravi Changes below -->
+
+    <string name="refr">Refresh</string>
+    <string name="regi">Registration</string>
+    <string name="seller">Seller List</string>
+    <string name="sear">Search</string>
+    <string name="sign">Sign Out</string>
+    <string name="createappoint">Create Leads</string>
+    <string name="leads">Leads</string>
+    <string name="appoint">Leads</string>
+    <string name="business_name">Business Name *</string>
+    <string name="mobileno">Mobile No. *</string>
+    <string name="pincode">PIN Code *</string>
+    <string name="city">City *</string>
+    <string name="state">State *</string>
+    <string name="remarks">Remarks *</string>
+    <string name="time_date">Set Appointment</string>
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+    <string name="online">Online</string>
+    <string name="pending">Pending</string>
+    <string name="mobile">Mobile</string>
+    <string name="name">Name</string>
+    <string name="date">Date</string>
+    <string name="status">Status</string>
+    <string name="leadtype">Lead-Type</string>
+    <string name="time">Time</string>
+    <string name="startday">Start Day</string>
+    <string name="endday">End Day</string>
+
+</resources>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView_leads"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_leads_businessname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/business_name"
+                    android:textSize="16sp" />
+
+                <com.ambsellerapp.ui.MyEditText
+                    android:id="@+id/edittext_leads_businessname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_text_edit"
+                    android:gravity="top"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_leads_mobileno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/mobileno"
+                    android:textSize="16sp" />
+
+                <com.ambsellerapp.ui.MyEditText
+                    android:id="@+id/edittext_leads_mobileno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_text_edit"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_leads_pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/pincode"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.ambsellerapp.ui.MyEditText
+                        android:id="@+id/edittext_leads_pincode"
+                        android:layout_width="230dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:alpha="100"
+                        android:background="#c3c3c3"
+                        android:digits="  abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="none"
+                        android:singleLine="true" />
+
+                    <Spinner
+                        android:id="@+id/spinner_leads_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginEnd="-3dp"
+                        android:layout_marginLeft="-2dp"
+                        android:layout_marginRight="-3dp"
+                        android:layout_marginStart="-2dp"
+                        android:alpha="100"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:dropDownSelector="#800000FF"
+                        android:gravity="center_vertical" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_leads_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/state"
+                    android:textSize="16sp" />
+
+                <com.ambsellerapp.ui.MyEditText
+                    android:id="@+id/edittext_leads_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_text_edit"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:inputType="text"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_leads_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/city"
+                    android:textSize="16sp" />
+
+                <com.ambsellerapp.ui.MyEditText
+                    android:id="@+id/edittext_leads_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_text_edit"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:inputType="textCapCharacters"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_leads_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/address"
+                    android:textSize="16sp" />
+
+                <com.ambsellerapp.ui.MyEditText
+                    android:id="@+id/edittext_leads_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_text_edit"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:inputType="text"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_leads_remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/remarks"
+                    android:textSize="16sp" />
+
+                <com.ambsellerapp.ui.MyEditText
+                    android:id="@+id/edittext_leads_remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_text_edit"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:text="SEA Seller Lead" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <com.ambsellerapp.ui.MyEditText
+                        android:id="@+id/edittext_leads_select_date_and_time"
+                        android:layout_width="203dp"
+                        android:layout_height="37dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:alpha="100"
+                        android:background="#c3c3c3"
+                        android:digits="  abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="none"
+                        android:singleLine="true" />
+
+                    <Button
+                        android:id="@+id/button_leads_date_and_time"
+                        android:layout_width="214dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/time_date"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp" >
+
+                    <TextView
+                        android:id="@+id/textview_leads_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="#c3c3c3"
+                        android:text=""
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textview_leads_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#c3c3c3"
+                        android:text=""
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/button_leads_reset"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/mybutton"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="@string/reset"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/button_leads_submit"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/mybutton"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="@string/submit"
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

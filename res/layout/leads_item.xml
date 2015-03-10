@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lead_item_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:id="@+id/leadInfoLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:weightSum="4" >
+
+            <TextView
+                android:id="@+id/leadNametextview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_vertical"
+                android:layout_weight="1"
+                android:paddingBottom="2dp"
+                android:ellipsize="end"
+                android:text="ABC Stores Pvt. Ltd."
+                android:textColor="#00107d"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/leadpincodetextview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_vertical"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:text="Pin: 110110"
+                android:textColor="#000000"
+                android:textSize="12.5sp"
+                 />
+
+            <TextView
+                android:id="@+id/leadRemarkstextview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_vertical"
+                android:layout_weight="1"
+                android:text="Hot Lead"
+                android:textColor="#000000"
+                android:textSize="12.5sp"
+                android:visibility="visible" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".1dp"
+                />
+            <TextView
+                android:id="@+id/leadmoreinfotextview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_vertical"
+                android:paddingTop="3dp"
+                android:layout_weight="1"
+                android:text="View/Save more information"
+                android:textColor="#00107d"
+                android:textSize="12.5sp"
+                android:visibility="visible" />
+        </LinearLayout>
+<!--  
+        <LinearLayout
+            android:id="@+id/leadtypeLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/leadtypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="S"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ff0000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+-->
+        <LinearLayout
+            android:id="@+id/Layoutleadstatus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="#c6c6c6"
+            android:orientation="vertical"
+            android:weightSum="4.3" >
+
+            <TextView
+                android:id="@+id/lead_status_textview"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1.4"
+                android:gravity="center_vertical|center"
+                android:padding="3dp"
+                android:text="Confirmed"
+                android:textColor="#00107d"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".1dp"
+                android:background="#ffffff" />
+
+            <TextView
+                android:id="@+id/lead_date_textview"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="0.7"
+                android:gravity="center_vertical|center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="0dp"
+                android:text="05-01-2015"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/lead_time_textview"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight=".8"
+                android:gravity="center_vertical|center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="5dp"
+
+                android:text="11:30 AM"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".1dp"
+                android:background="#ffffff" />
+
+            <TextView
+                android:id="@+id/leadNumbertextview"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1.2"
+                android:drawableLeft="@drawable/phone16"
+                android:drawableStart="@drawable/phone16"
+                android:gravity="center_vertical|center"
+                android:paddingLeft="2dp"
+                android:paddingStart="2dp"
+                android:text="9709832780"
+                android:textColor="#00107d"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

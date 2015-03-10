@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+    <LinearLayout
+        android:id="@+id/seller_item_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:id="@+id/sellerInfoLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="67"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/sellerNametextview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_vertical"
+                android:layout_weight=".9"
+                android:textColor="#00107d"
+                android:ellipsize="end"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sellerAddresstextview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_vertical"
+                android:layout_weight=".9"
+                android:textSize="13.5sp"
+                android:lines="2"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/sellerPINCodetextview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_vertical"
+                android:layout_weight="1.2"
+                android:textSize="12.5sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutTopUpAmount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="33"
+            android:background="#c6c6c6"
+            android:orientation="vertical"
+            android:weightSum="1"
+             >
+
+            <TextView
+                android:id="@+id/topAmounttextview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+                android:padding="5dp"
+                android:text="0"
+                android:layout_weight=".4"
+                android:textSize="13sp"
+                android:visibility="visible" />
+            
+            <View android:layout_width="match_parent"
+                android:layout_height=".1dp"
+                android:background="#ffffff"/>
+
+            <TextView
+                android:id="@+id/sellerNumbertextview"
+                android:layout_width="match_parent"
+                android:layout_weight=".6"
+                android:gravity="center_vertical|center"
+                android:layout_height="match_parent"
+                android:textColor="#00107d"
+                android:drawableLeft="@drawable/phone16"
+                android:drawableStart="@drawable/phone16"
+                android:paddingLeft="12dip"
+                android:paddingStart="12dip"
+                android:paddingRight="0dip"
+                android:paddingEnd="0dip"
+                android:text="k"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

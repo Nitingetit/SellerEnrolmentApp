@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/nameLayout"
+            layout="@layout/name_registration_form"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/bankLayout"
+            layout="@layout/bank_registration_form"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/locationLayout"
+            layout="@layout/location_registration_form"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footerLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="19dp"
+        android:baselineAligned="true"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:id="@+id/footerLinearLayoutForClearAll"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnClearAll"
+                android:layout_width="80dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/mybutton"
+                android:clickable="true"
+                android:ems="5"
+                android:padding="5dp"
+                android:text="Clear All"
+                android:textColor="@android:color/white" />
+
+            <ProgressBar
+                android:id="@+id/progressBar111"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="42dp"
+                android:indeterminate="true"
+                android:max="100"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/footerLinearLayoutForButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/prev_button"
+                android:clickable="false"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/next_button2"
+                android:ems="5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

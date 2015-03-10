@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainDropDownLayoutsetStatus"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#c6c6c6"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".1dp"
+        android:background="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/LayoutsetStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/setStatusTextView"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="30"
+            android:singleLine="true"
+            android:text="Set Status"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/leadstatusSpinner"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_weight="60"
+            android:background="@android:drawable/btn_dropdown"
+            android:ems="10"
+            android:textColor="#ffffff" >
+
+            <requestFocus />
+        </Spinner>
+
+        <Button
+            android:id="@+id/rescheduleButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="10"
+            android:background="@drawable/calender"
+            android:padding="2dp"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutReschedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/Reschedule_date"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="18.39"
+            android:padding="2dp"
+            android:text="Rescheduled On: "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Reschedule_time"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:padding="2dp"
+            android:text="New Date is :"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/reason_textView"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.90"
+            android:text="Reason : "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold" 
+            android:layout_marginRight="12dp"/>
+
+        <com.ambsellerapp.ui.MyEditText
+            android:id="@+id/reason_editText"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:background="@drawable/rect_text_edit"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    
+    <RelativeLayout
+        android:id="@+id/LayoutSaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/leadSaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mybutton"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Enter Details"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:textStyle="bold" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

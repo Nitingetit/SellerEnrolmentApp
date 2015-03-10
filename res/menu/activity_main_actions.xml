@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<item
+        android:id="@+id/create_leads"
+        android:icon="@drawable/ic_create_leads"
+        android:showAsAction="ifRoom"
+        android:title="@string/createappoint"/>
+
+	<item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_action_search"
+        android:showAsAction="ifRoom"
+        android:title="@string/sear"/>
+    
+	<item
+        android:id="@+id/refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:showAsAction="ifRoom"
+        android:title="@string/refr"/>
+        
+    <item
+        android:id="@+id/leads"
+        android:icon="@drawable/ic_leads"
+        android:showAsAction="withText"
+        android:title="@string/appoint"/>
+    <item
+        android:id="@+id/registration"
+        android:icon="@drawable/ic_registration"
+        android:showAsAction="withText"
+        android:title="@string/regi"/>
+    
+    <item
+        android:id="@+id/sellerList"
+        android:icon="@drawable/ic_seller_list"
+        android:title="@string/seller"
+        android:showAsAction="withText"/>   
+    
+    <item
+        android:id="@+id/log_out"
+        android:icon="@drawable/ic_logout"
+        android:showAsAction="withText"
+        android:title="@string/sign"/>
+   
+</menu>

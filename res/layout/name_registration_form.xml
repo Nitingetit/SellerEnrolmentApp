@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/formLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/bussiness_name"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/bussiness_name_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_text_edit"
+                    android:gravity="center_vertical"
+                    android:maxLength="50"
+                    android:singleLine="true" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/mobile_no"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.9"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/mobile_no_edittext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rect_text_edit"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:singleLine="true" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBarVerifiedButton"
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_alignRight="@+id/mobile_no_edittext"
+                            android:layout_centerVertical="true"
+                            android:indeterminate="true"
+                            android:max="100"
+                            android:progressDrawable="@drawable/circular_progress_bar"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/verify_button"
+                        android:layout_width="50dp"
+                        android:layout_height="37dp"
+                        android:layout_weight=".1"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginStart="1dp"
+                        android:background="@drawable/new_button"
+                        android:text="@string/verfiy_text"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/email_id"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/email_id_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_text_edit"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="40"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/shipping_address"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/shipping_address_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_text_edit"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:maxLength="200"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/shipping_city"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/city_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_text_edit"
+                    android:digits="  abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:maxLength="30"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/shipping_state"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/state_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_text_edit"
+                    android:digits="  abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:maxLength="30"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/shipping_pin_code"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/pincode_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="-3dp"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_marginRight="-3dp"
+                    android:layout_marginStart="-2dp"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:dropDownSelector="#800000FF"
+                    android:gravity="center_vertical"
+                    android:prompt="@string/select_pincode" />
+
+                <CheckBox
+                    android:id="@+id/BillingAddressSameAsShippingAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make Billing address same as Shipping address"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/billing_address"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/billing_address_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_text_edit"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:maxLength="200"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/billing_city"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/billing_city_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_text_edit"
+                    android:digits="  abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:maxLength="30"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/billing_state"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/billing_state_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_text_edit"
+                    android:digits="  abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:maxLength="30"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/billing_pin_code"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/billing_pincode_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="-3dp"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_marginRight="-3dp"
+                    android:layout_marginStart="-2dp"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:dropDownSelector="#800000FF"
+                    android:gravity="center_vertical"
+                    android:prompt="@string/select_pincode" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutVerificationKey"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="22.6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TxtViewVerificationKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/verfication_key"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/verfication_key_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_text_edit"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
